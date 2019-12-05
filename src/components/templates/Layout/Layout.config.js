@@ -4,20 +4,20 @@ export const colorConfig = {
     background: "#1b1b1b"
   },
   home: {
-    color: "red",
-    background: "blue"
+    color: "#8D8741",
+    background: "#1b1b1b"
   },
   contact: {
-    color: "red",
-    background: "blue"
+    color: "#3500D3",
+    background: "#1b1b1b"
   },
   resume: {
-    color: "red",
-    background: "blue"
+    color: "#C3073F",
+    background: "#1b1b1b"
   },
   projects: {
-    color: "red",
-    background: "blue"
+    color: "#D83F87",
+    background: "#1b1b1b"
   }
 };
 
