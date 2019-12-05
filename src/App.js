@@ -41,10 +41,15 @@ class App extends Component {
       <StyledApp>
         <Router>
           {!displayHeader && isMobileView && (
-            <button onClick={() => this.setState({displayHeader:true})}>Display header</button>
+            <button onClick={() => this.setState({ displayHeader: true })}>
+              Display header
+            </button>
           )}
           {(!isMobileView || displayHeader) && (
-            <Header isMobileView={isMobileView} />
+            <Header
+              isMobileView={isMobileView}
+              closeHeader={() => this.setState({ displayHeader: false })}
+            />
           )}
           <Switch>
             <Route path="/" exact component={Home} />
