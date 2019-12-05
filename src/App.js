@@ -12,6 +12,8 @@ import Projects from "./components/templates/Projects";
 import { checkViewPort } from "./utils";
 import Header from "./components/organisms/Header";
 
+import menuSvg from "./assets/svgs/menuIcon.svg";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -42,7 +44,7 @@ class App extends Component {
         <Router>
           {!displayHeader && isMobileView && (
             <button onClick={() => this.setState({ displayHeader: true })}>
-              Display header
+              <img src={menuSvg} className="header-menu" alt="menuSvg" />
             </button>
           )}
           {(!isMobileView || displayHeader) && (
