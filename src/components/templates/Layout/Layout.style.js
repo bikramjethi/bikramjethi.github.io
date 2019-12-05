@@ -6,4 +6,19 @@ export default styled.div`
   min-height: 100vh;
   background: ${props => props.background};
   color: ${props => props.color};
+
+  .two-panel {
+    display: flex;
+  }
+
+  .left-div,
+  .right-div {
+    width: 50%;
+    transition: all 2s;
+  }
+
+  .left-div:hover,
+  .right-div:hover {
+    width: 120%;
+  }
 `;
