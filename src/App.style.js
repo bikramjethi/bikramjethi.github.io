@@ -5,6 +5,7 @@ export default styled.div`
   min-height: 100vh;
   background: url(${img});
   color: #fff;
+  display: flex;
   
   ol,
   ul {
