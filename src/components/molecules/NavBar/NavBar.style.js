@@ -10,7 +10,6 @@ export default styled.nav`
 
   a {
     padding: 10px 20px;
-    background: white;
     border-radius: 5px;
   }
 `;

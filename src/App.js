@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StyledApp from "./App.style";
 import "./App.css";
 import Button from "./components/atoms/Button";
-import NavBar from "./components/molecules/NavBar/NavBar";
 
 import Home from "./components/templates/Home";
 import Intro from "./components/templates/Intro";
@@ -11,12 +10,14 @@ import Contact from "./components/templates/Contact";
 import Resume from "./components/templates/Resume";
 import Projects from "./components/templates/Projects";
 import { checkViewPort } from "./utils";
+import Header from "./components/organisms/Header";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMobileView: false
+      isMobileView: false,
+      displayHeader: false
     };
   }
   componentDidMount() {
@@ -35,11 +36,16 @@ class App extends Component {
   };
 
   render() {
-    const { isMobileView } = this.state;
+    const { isMobileView, displayHeader } = this.state;
     return (
       <StyledApp>
         <Router>
-          <header id="header">{!isMobileView && <NavBar />}</header>
+          {!displayHeader && isMobileView && (
+            <button onClick={() => this.setState({displayHeader:true})}>Display header</button>
+          )}
+          {(!isMobileView || displayHeader) && (
+            <Header isMobileView={isMobileView} />
+          )}
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/intro" component={Intro} />
