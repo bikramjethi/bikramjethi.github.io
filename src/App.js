@@ -43,8 +43,8 @@ class App extends Component {
       <StyledApp>
         <Router>
           {!displayHeader && isMobileView && (
-            <button onClick={() => this.setState({ displayHeader: true })}>
-              <img src={menuSvg} className="header-menu" alt="menuSvg" />
+            <button onClick={() => this.setState({ displayHeader: true })} className="header-menu">
+              <img className="header-menu-icon" src={menuSvg} alt="menuSvg" />
             </button>
           )}
           {(!isMobileView || displayHeader) && (
