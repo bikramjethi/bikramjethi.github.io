@@ -12,8 +12,6 @@ import Projects from "./components/templates/Projects";
 import { checkViewPort } from "./utils";
 import Header from "./components/organisms/Header";
 
-import menuSvg from "./assets/svgs/menuIcon.svg";
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -42,17 +40,12 @@ class App extends Component {
     return (
       <StyledApp>
         <Router>
-          {!displayHeader && isMobileView && (
-            <button onClick={() => this.setState({ displayHeader: true })} className="header-menu">
-              <img className="header-menu-icon" src={menuSvg} alt="menuSvg" />
-            </button>
-          )}
-          {(!isMobileView || displayHeader) && (
             <Header
               isMobileView={isMobileView}
+              displayHeader={displayHeader}
+              openHeader={() => this.setState({ displayHeader: true })}
               closeHeader={() => this.setState({ displayHeader: false })}
             />
-          )}
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/intro" component={Intro} />

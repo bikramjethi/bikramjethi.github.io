@@ -22,15 +22,4 @@ export default styled.div`
     color: transparent;
   }
 
-  .header-menu {
-    align-self: flex-start;
-  }
-
-  .header-menu-icon {
-    width: 30px;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 `;

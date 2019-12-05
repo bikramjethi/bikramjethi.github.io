@@ -5,11 +5,10 @@ export default styled.nav`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
   }
 
   a {
-    padding: 10px 20px;
+    padding: 10px 0;
     border-radius: 5px;
     color: #fff;
   }

@@ -8,10 +8,7 @@ export default styled.header`
   padding: 10px 20px;
 
   .cross-icon {
-    position: absolute;
-    right: 10px;
-    top: 7px;
-    width: 15px;
+    width: 30px;
     cursor: pointer;
   }
 `;
