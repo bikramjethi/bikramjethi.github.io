@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/bikramjethi/bikramjethi.github.io/static/css/main.d1b05096.chunk.css",
+    "main.js": "/bikramjethi/bikramjethi.github.io/static/js/main.c42effc7.chunk.js",
+    "main.js.map": "/bikramjethi/bikramjethi.github.io/static/js/main.c42effc7.chunk.js.map",
+    "runtime-main.js": "/bikramjethi/bikramjethi.github.io/static/js/runtime-main.ed3558ff.js",
+    "runtime-main.js.map": "/bikramjethi/bikramjethi.github.io/static/js/runtime-main.ed3558ff.js.map",
+    "static/js/2.d14c9a6e.chunk.js": "/bikramjethi/bikramjethi.github.io/static/js/2.d14c9a6e.chunk.js",
+    "static/js/2.d14c9a6e.chunk.js.map": "/bikramjethi/bikramjethi.github.io/static/js/2.d14c9a6e.chunk.js.map",
+    "index.html": "/bikramjethi/bikramjethi.github.io/index.html",
+    "precache-manifest.b7f4615e8ae8c8d3335d6987ec76bc93.js": "/bikramjethi/bikramjethi.github.io/precache-manifest.b7f4615e8ae8c8d3335d6987ec76bc93.js",
+    "service-worker.js": "/bikramjethi/bikramjethi.github.io/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/bikramjethi/bikramjethi.github.io/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.d14c9a6e.chunk.js.LICENSE": "/bikramjethi/bikramjethi.github.io/static/js/2.d14c9a6e.chunk.js.LICENSE",
+    "static/media/logo.svg": "/bikramjethi/bikramjethi.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed3558ff.js",
+    "static/js/2.d14c9a6e.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.c42effc7.chunk.js"
+  ]
+}
