@@ -1,14 +1,17 @@
 import styled from "styled-components";
-export default styled.div`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  min-height: 100vh;
+import img from "./assets/images/appBackground.jpeg";
 
+export default styled.div`
+  min-height: 100vh;
+  background: url(${img});
+  color: #fff;
+  
   ol,
   ul {
     list-style: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 `;

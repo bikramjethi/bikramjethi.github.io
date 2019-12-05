@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StyledApp from "./App.style";
+import './App.css';
 import Button from "./components/atoms/Button";
 import NavBar from "./components/molecules/NavBar/NavBar";
 
