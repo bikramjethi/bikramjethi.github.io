@@ -3,6 +3,10 @@ import styled from "styled-components";
 export default styled.div`
   width: 100%;
 
+  img {
+      height:100%;
+    }
+
   h1 {
       color:white;
   }
