@@ -18,6 +18,10 @@ export default styled.div`
     text-decoration: none;
   }
 
+  button {
+    color: transparent;
+  }
+
   .header-menu {
     align-self: flex-start;
   }
