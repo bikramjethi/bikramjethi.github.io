@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { colorConfig } from "./Layout.config";
 
 export default styled.div`
   display: flex;
   min-height: 100vh;
-  background: #1b1b1b;
-  color: #4eae75;
+  background: ${props => props.background};
+  color: ${props => props.color};
 `;

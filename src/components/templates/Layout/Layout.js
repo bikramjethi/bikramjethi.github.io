@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "../../organisms/Header";
 import { checkViewPort } from "../../../utils";
 import StyledLayout from "./Layout.style";
+import { pathNameConfig, colorConfig } from "./Layout.config";
 
 class Layout extends Component {
   constructor(props) {
@@ -27,10 +28,15 @@ class Layout extends Component {
   };
 
   render() {
-    const { children } = this.props;
+    const {
+      children,
+      location: { pathname }
+    } = this.props;
     const { isMobileView, displayHeader } = this.state;
+    const mode = pathNameConfig[pathname];
+
     return (
-      <StyledLayout>
+      <StyledLayout color={colorConfig[mode].color} background={colorConfig[mode].background}>
         {" "}
         <Header
           isMobileView={isMobileView}
