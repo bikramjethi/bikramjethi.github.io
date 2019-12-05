@@ -10,6 +10,10 @@ export default styled.div`
     list-style: none;
   }
 
+  img {
+    width: 100%;
+  }
+
   a {
     text-decoration: none;
   }

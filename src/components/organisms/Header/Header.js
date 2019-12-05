@@ -3,6 +3,7 @@ import StyledHeader from "./Header.style";
 import NavBar from "../../molecules/NavBar";
 
 import closeSvg from "../../../assets/svgs/close.svg";
+import ProfileSection from "../../molecules/ProfileSection";
 
 const Header = ({ isMobileView, closeHeader }) => {
   return (
@@ -12,6 +13,7 @@ const Header = ({ isMobileView, closeHeader }) => {
           <img src={closeSvg} alt="closeSvg" />
         </button>
       )}
+      <ProfileSection />
       <NavBar />
     </StyledHeader>
   );
