@@ -5,6 +5,8 @@ export default styled.header`
   height: 100vh;
   max-width: 80%;
   padding: 10px 20px;
+  background:${props => props.background};
+  color:${props => props.color};
 
   .cross-icon {
     width: 30px;

@@ -34,13 +34,20 @@ class Layout extends Component {
     } = this.props;
     const { isMobileView, displayHeader } = this.state;
     const mode = pathNameConfig[pathname];
+    const background = colorConfig[mode].background;
+    const color=colorConfig[mode].color;
 
     return (
-      <StyledLayout color={colorConfig[mode].color} background={colorConfig[mode].background}>
+      <StyledLayout
+        color={color}
+        background={background}
+      >
         {" "}
         <Header
           isMobileView={isMobileView}
           displayHeader={displayHeader}
+          background={color}
+          color={background}
           openHeader={() => this.setState({ displayHeader: true })}
           closeHeader={() => this.setState({ displayHeader: false })}
         />
