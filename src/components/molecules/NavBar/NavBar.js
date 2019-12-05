@@ -7,6 +7,9 @@ const NavBar = () => {
     <StyledNavBar>
       {" "}
       <ul>
+        <Link to="/">
+          <li>Home</li>
+        </Link>
         <Link to="intro">
           <li>Intro</li>
         </Link>
