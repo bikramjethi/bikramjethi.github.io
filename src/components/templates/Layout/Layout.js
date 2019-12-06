@@ -4,6 +4,7 @@ import { checkViewPort } from "../../../utils";
 import StyledLayout from "./Layout.style";
 import { pathNameConfig, imagePanelConfig, colorConfig } from "./Layout.config";
 import DevImagePanel from "../../molecules/DevImagePanel";
+import Cursor from "../../atoms/Cursor";
 
 class Layout extends Component {
   constructor(props) {
@@ -42,6 +43,10 @@ class Layout extends Component {
     return (
       <StyledLayout color={color} background={background}>
         {" "}
+        <Cursor
+          color={color}
+          background={background}
+        />
         <Header
           isMobileView={isMobileView}
           displayHeader={displayHeader}
@@ -50,7 +55,7 @@ class Layout extends Component {
           openHeader={() => this.setState({ displayHeader: true })}
           closeHeader={() => this.setState({ displayHeader: false })}
         />
-        <div className={imagePanel ? "two-panel" : ""}>
+        <div className={`${imagePanel ? "two-panel" : ""}`}>
           {imagePanel && <DevImagePanel className="left-div" />}
           {children}
         </div>
