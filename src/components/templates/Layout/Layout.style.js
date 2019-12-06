@@ -7,6 +7,17 @@ export default styled.div`
   background: ${props => props.background};
   color: ${props => props.color};
 
+  .main-layout {
+    .cursor {
+      display: none;
+    }
+    :hover {
+      .cursor {
+        display: block;
+      }
+    }
+  }
+
   .two-panel {
     display: flex;
     width: 100%;

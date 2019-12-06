@@ -11,7 +11,8 @@ class Layout extends Component {
     super(props);
     this.state = {
       isMobileView: false,
-      displayHeader: false
+      displayHeader: false,
+      headerHover: true
     };
   }
   componentDidMount() {
@@ -34,19 +35,15 @@ class Layout extends Component {
       children,
       location: { pathname }
     } = this.props;
-    const { isMobileView, displayHeader } = this.state;
+    const { isMobileView, displayHeader, headerHover } = this.state;
     const mode = pathNameConfig[pathname];
     const background = colorConfig[mode].background;
     const color = colorConfig[mode].color;
     const imagePanel = imagePanelConfig[mode];
-
+    console.log("layout rerender", headerHover, color, background);
     return (
       <StyledLayout color={color} background={background}>
         {" "}
-        <Cursor
-          color={color}
-          background={background}
-        />
         <Header
           isMobileView={isMobileView}
           displayHeader={displayHeader}
@@ -55,7 +52,8 @@ class Layout extends Component {
           openHeader={() => this.setState({ displayHeader: true })}
           closeHeader={() => this.setState({ displayHeader: false })}
         />
-        <div className={`${imagePanel ? "two-panel" : ""}`}>
+        <div className={`${imagePanel ? "two-panel" : ""} main-layout`}>
+          <Cursor color={color} className="cursor" />
           {imagePanel && <DevImagePanel className="left-div" />}
           {children}
         </div>

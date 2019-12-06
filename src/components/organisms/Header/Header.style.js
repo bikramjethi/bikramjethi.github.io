@@ -7,6 +7,15 @@ export default styled.header`
   background: ${props => props.background};
   color: ${props => props.color};
 
+  .cursor {
+    display: none;
+  }
+  :hover {
+    .cursor {
+      display: block;
+    }
+  }
+
   .cross-icon {
     width: 30px;
     cursor: pointer;

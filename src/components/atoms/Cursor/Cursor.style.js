@@ -12,6 +12,7 @@ export default styled.div`
   transition-duration: 200ms;
   transition-timing-function: ease-out;
   animation: cursorAnim 0.5s infinite alternate;
+  z-index: 2;
 
   ::before {
     content: "";
