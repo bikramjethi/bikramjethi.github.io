@@ -5,13 +5,14 @@ class Cursor extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageX: false,
-      pageY: false
+      pageX: 0,
+      pageY: 0
     };
   }
+
   componentDidMount() {
     document.addEventListener("mousemove", e => {
-      this.setState({ pageX: e.pageX - 15, pageY: e.pageY - 15 });
+      this.setState({ pageX: `${e.pageX - 15}px`, pageY: `${e.pageY - 15}px` });
     });
   }
 

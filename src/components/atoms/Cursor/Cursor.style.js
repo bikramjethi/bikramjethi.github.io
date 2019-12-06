@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
-export default styled.div`
+export default styled.div.attrs(props => ({
+  style: {
+    top: props.pageY,
+    left: props.pageX,
+    "border-color": props.color
+  }
+}))`
   width: 30px;
   height: 30px;
-  border: 3px solid ${props => props.color};
+  border: 3px solid;
   border-radius: 50%;
   position: absolute;
-  top: ${props => props.pageY}px;
-  left: ${props => props.pageX}px;
   cursor: none;
-  transition-duration: 200ms;
-  transition-timing-function: ease-out;
   animation: cursorAnim 0.5s infinite alternate;
   z-index: 2;
 
