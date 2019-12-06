@@ -13,10 +13,10 @@ const Home = ({ className }) => (
         organization and contribute towards its growth.
       </p>
     </div>
-    <div className="intro"> Complete Intro</div>
     <div className="resume"> Interactive resume</div>
-    <div className="projects"> Projects Done</div>
     <div className="contact"> Contact Info</div>
+    <div className="intro"> Complete Intro</div>
+    <div className="projects"> Projects Done</div>
   </StyledHome>
 );
 
