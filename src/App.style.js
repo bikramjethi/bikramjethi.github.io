@@ -12,6 +12,7 @@ export default styled.div`
 
   a {
     text-decoration: none;
+    cursor: none;
   }
 
   .menu-button {

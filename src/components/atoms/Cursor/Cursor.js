@@ -18,7 +18,6 @@ class Cursor extends Component {
   render() {
     const { color, className } = this.props;
     const { pageX, pageY } = this.state;
-    console.log("cursor rerender");
     return (
       <StyledCursor
         pageX={pageX}

@@ -16,10 +16,8 @@ export const colorConfig = {
     background: "#1b1b1b"
   },
   projects: {
-    // color: "#D83F87",
-    // background: "#1b1b1b",
-    color: "red",
-    background: "blue"
+    color: "#D83F87",
+    background: "#1b1b1b",
   }
 };
 
