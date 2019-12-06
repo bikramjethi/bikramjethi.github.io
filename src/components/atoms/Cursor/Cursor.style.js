@@ -11,10 +11,9 @@ export default styled.div.attrs(props => ({
   border: 3px solid ${props => props.color};
   border-radius: 50%;
   position: absolute;
-  cursor: none;
+  pointer-events: none !important;
   animation: cursorAnim 0.5s infinite alternate;
   z-index: 2;
-  pointer-events: none;
 
   ::before {
     content: "";
