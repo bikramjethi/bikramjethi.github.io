@@ -3,6 +3,7 @@ import Header from "../../organisms/Header";
 import { checkViewPort } from "../../../utils";
 import StyledLayout from "./Layout.style";
 import { pathNameConfig, colorConfig } from "./Layout.config";
+import DevImagePanel from "../../molecules/DevImagePanel";
 
 class Layout extends Component {
   constructor(props) {
@@ -35,13 +36,10 @@ class Layout extends Component {
     const { isMobileView, displayHeader } = this.state;
     const mode = pathNameConfig[pathname];
     const background = colorConfig[mode].background;
-    const color=colorConfig[mode].color;
+    const color = colorConfig[mode].color;
 
     return (
-      <StyledLayout
-        color={color}
-        background={background}
-      >
+      <StyledLayout color={color} background={background}>
         {" "}
         <Header
           isMobileView={isMobileView}
@@ -51,7 +49,10 @@ class Layout extends Component {
           openHeader={() => this.setState({ displayHeader: true })}
           closeHeader={() => this.setState({ displayHeader: false })}
         />
-        {children}
+        <div className="two-panel">
+          <DevImagePanel className="left-div" />
+          {children}
+        </div>
       </StyledLayout>
     );
   }

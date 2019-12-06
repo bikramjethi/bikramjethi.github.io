@@ -9,16 +9,12 @@ export default styled.div`
 
   .two-panel {
     display: flex;
+    width: 100%;
   }
 
   .left-div,
   .right-div {
     width: 50%;
     transition: all 2s;
-  }
-
-  .left-div:hover,
-  .right-div:hover {
-    width: 120%;
   }
 `;
