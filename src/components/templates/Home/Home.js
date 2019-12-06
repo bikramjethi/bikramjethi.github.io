@@ -1,10 +1,12 @@
 import React from "react";
 import StyledHome from "./Home.style";
 
+import { Link } from "react-router-dom";
+
 const Home = ({ className }) => (
   <StyledHome className={className}>
     {" "}
-    <div className="brief">
+    <Link className="brief" to="">
       <h1>Bikram Jethi (FrontEnd Developer)</h1>
       <p>
         A passionate Front-end Web Developer with a knack for stunning designs,
@@ -12,11 +14,23 @@ const Home = ({ className }) => (
         new technologies aims to expand his knowledge working for a  progressive
         organization and contribute towards its growth.
       </p>
-    </div>
-    <div className="resume"> Interactive resume</div>
-    <div className="contact"> Contact Info</div>
-    <div className="intro"> Complete Intro</div>
-    <div className="projects"> Projects Done</div>
+    </Link>
+    <Link className="resume" to="/resume">
+      {" "}
+      Interactive resume
+    </Link>
+    <Link className="contact" to="/contact">
+      {" "}
+      Contact Info
+    </Link>
+    <Link className="intro" to="/intro">
+      {" "}
+      Complete Intro
+    </Link>
+    <Link className="projects" to="/projects">
+      {" "}
+      Projects Done
+    </Link>
   </StyledHome>
 );
 
