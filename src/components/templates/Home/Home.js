@@ -2,7 +2,7 @@ import React from "react";
 import StyledHome from "./Home.style";
 
 const Home = () => (
-  <StyledHome className="right-div">
+  <StyledHome className="">
     {" "}
     <div className="brief wrap-home">
       <h1>Bikram Jethi (FrontEnd Developer)</h1>

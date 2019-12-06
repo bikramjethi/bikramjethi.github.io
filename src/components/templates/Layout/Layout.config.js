@@ -28,3 +28,11 @@ export const pathNameConfig = {
   "/contact": "contact",
   "/projects": "projects"
 };
+
+export const imagePanelConfig = {
+  home: false,
+  intro: true,
+  resume: false,
+  projects: true,
+  contact: true
+};

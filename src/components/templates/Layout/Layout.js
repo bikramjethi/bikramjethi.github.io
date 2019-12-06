@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Header from "../../organisms/Header";
 import { checkViewPort } from "../../../utils";
 import StyledLayout from "./Layout.style";
-import { pathNameConfig, colorConfig } from "./Layout.config";
+import { pathNameConfig, imagePanelConfig, colorConfig } from "./Layout.config";
 import DevImagePanel from "../../molecules/DevImagePanel";
 
 class Layout extends Component {
@@ -37,6 +37,7 @@ class Layout extends Component {
     const mode = pathNameConfig[pathname];
     const background = colorConfig[mode].background;
     const color = colorConfig[mode].color;
+    const imagePanel = imagePanelConfig[mode];
 
     return (
       <StyledLayout color={color} background={background}>
@@ -49,8 +50,8 @@ class Layout extends Component {
           openHeader={() => this.setState({ displayHeader: true })}
           closeHeader={() => this.setState({ displayHeader: false })}
         />
-        <div className="two-panel">
-          <DevImagePanel className="left-div" />
+        <div className={imagePanel ? "two-panel" : ""}>
+          {imagePanel && <DevImagePanel className="left-div" />}
           {children}
         </div>
       </StyledLayout>
