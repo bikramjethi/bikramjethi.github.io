@@ -11,8 +11,7 @@ class Layout extends Component {
     super(props);
     this.state = {
       isMobileView: false,
-      displayHeader: false,
-      headerHover: true
+      displayHeader: false
     };
   }
   componentDidMount() {
@@ -35,12 +34,11 @@ class Layout extends Component {
       children,
       location: { pathname }
     } = this.props;
-    const { isMobileView, displayHeader, headerHover } = this.state;
+    const { isMobileView, displayHeader } = this.state;
     const mode = pathNameConfig[pathname];
     const background = colorConfig[mode].background;
     const color = colorConfig[mode].color;
     const imagePanel = imagePanelConfig[mode];
-    console.log("layout rerender", headerHover, color, background);
     return (
       <StyledLayout color={color} background={background}>
         {" "}

@@ -8,6 +8,7 @@ export default styled.div`
   color: ${props => props.color};
 
   .main-layout {
+    width: 100%;
     .cursor {
       display: none;
     }
