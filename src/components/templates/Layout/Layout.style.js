@@ -7,6 +7,9 @@ export default styled.div`
   background: ${props => props.background};
   color: ${props => props.color};
 
+  a {
+    color: ${props => props.color};
+  }
   .main-layout {
     width: 100%;
     .cursor {
