@@ -4,7 +4,7 @@ export const colorConfig = {
     background: "#1b1b1b"
   },
   home: {
-    color: "#8D8741",
+    color: "#46185f",
     background: "#1b1b1b"
   },
   contact: {

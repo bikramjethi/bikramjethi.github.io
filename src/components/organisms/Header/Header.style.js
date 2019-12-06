@@ -6,6 +6,7 @@ export default styled.header`
   padding: 10px 20px;
   background: ${props => props.background};
   color: ${props => props.color};
+  transition: all 2s;
 
   .cursor {
     display: none;
