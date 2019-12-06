@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export default styled.div`
-  .wrap-home {
-    display: inline-block;
-  }
+  display: grid;
+
   .brief {
     background: red;
   }

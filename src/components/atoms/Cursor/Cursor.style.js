@@ -25,6 +25,7 @@ export default styled.div.attrs(props => ({
     left: -11px;
     border-radius: 50%;
     opacity: 0.5;
+    animation: cursorAnim2 0.5s infinite alternate;
   }
 
   ::after {
@@ -45,6 +46,31 @@ export default styled.div.attrs(props => ({
     }
     to {
       transform: scale(0.7);
+    }
+  }
+
+  @keyframes cursorAnim2{
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(0.4);
+    }
+  }
+
+  &.click-animation {
+    animation: clickAnim 1s forwards;
+  }
+
+  @keyframes clickAnim {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(2.5);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 `;

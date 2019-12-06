@@ -6,7 +6,8 @@ class Cursor extends Component {
     super(props);
     this.state = {
       pageX: 0,
-      pageY: 0
+      pageY: 0,
+      clickAnim: false
     };
   }
 
@@ -14,17 +15,26 @@ class Cursor extends Component {
     document.addEventListener("mousemove", e => {
       this.setState({ pageX: `${e.pageX - 15}px`, pageY: `${e.pageY - 15}px` });
     });
+    document.addEventListener("click", e => {
+      this.setState({ clickAnim: true }, () => {
+        setTimeout(this.removeClickAnimation, 800);
+      });
+    });
   }
+
+  removeClickAnimation = () => {
+    this.setState({ clickAnim: false });
+  };
 
   render() {
     const { color, className } = this.props;
-    const { pageX, pageY } = this.state;
+    const { pageX, pageY, clickAnim } = this.state;
     return (
       <StyledCursor
         pageX={pageX}
         pageY={pageY}
         color={color}
-        className={className}
+        className={`${className} ${clickAnim ? "click-animation" : ""}`}
       />
     );
   }
