@@ -1,12 +1,11 @@
 import React from "react";
 import StyledHome from "./Home.style";
-
-import { Link } from "react-router-dom";
+import FlipCard from "../../organisms/FlipCard";
 
 const Home = ({ className }) => (
   <StyledHome className={className}>
     {" "}
-    <Link className="brief" to="">
+    <FlipCard className="brief" to="">
       <h1>Bikram Jethi (FrontEnd Developer)</h1>
       <p>
         A passionate Front-end Web Developer with a knack for stunning designs,
@@ -14,23 +13,23 @@ const Home = ({ className }) => (
         new technologies aims to expand his knowledge working for a  progressive
         organization and contribute towards its growth.
       </p>
-    </Link>
-    <Link className="resume" to="/resume">
+    </FlipCard>
+    <FlipCard className="resume" to="/resume">
       {" "}
       Interactive resume
-    </Link>
-    <Link className="contact" to="/contact">
+    </FlipCard>
+    <FlipCard className="contact" to="/contact">
       {" "}
       Contact Info
-    </Link>
-    <Link className="intro" to="/intro">
+    </FlipCard>
+    <FlipCard className="intro" to="/intro">
       {" "}
       Complete Intro
-    </Link>
-    <Link className="projects" to="/projects">
+    </FlipCard>
+    <FlipCard className="projects" to="/projects">
       {" "}
       Projects Done
-    </Link>
+    </FlipCard>
   </StyledHome>
 );
 
