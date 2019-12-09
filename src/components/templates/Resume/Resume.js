@@ -1,5 +1,11 @@
 import React from "react";
+import StyledResume from "./Resume.style";
+import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 
-const Resume = () => <div className="right-div">Resume Page</div>;
+const Resume = () => (
+  <StyledResume className="right-div">
+    <BasicInfo heading="Resume"></BasicInfo>
+  </StyledResume>
+);
 
 export default Resume;
