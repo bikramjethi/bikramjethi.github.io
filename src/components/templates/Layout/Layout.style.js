@@ -32,4 +32,7 @@ export default styled.div`
     width: 50%;
     transition: all 2s;
   }
+  .right-div {
+    padding: 40px 40px 0;
+  }
 `;
