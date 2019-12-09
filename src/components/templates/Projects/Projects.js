@@ -3,8 +3,8 @@ import StyledProjects from "./Projects.style";
 import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 
 const Projects = () => (
-  <StyledProjects className="right-div">
-    <BasicInfo heading="projects"></BasicInfo>
+  <StyledProjects className="right-div" pageType="projects">
+    <BasicInfo heading="projects" pageType="projects"></BasicInfo>
   </StyledProjects>
 );
 

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 export default styled.nav`
-  .nav-link {
-  }
 
   ul {
     display: flex;

@@ -4,7 +4,7 @@ import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 
 const Contact = () => (
   <StyledContact className="right-div">
-    <BasicInfo heading="contact me"></BasicInfo>
+    <BasicInfo heading="contact me" pageType="contact"></BasicInfo>
   </StyledContact>
 );
 

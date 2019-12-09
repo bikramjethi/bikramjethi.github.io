@@ -6,7 +6,7 @@ import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 const Intro = () => {
   return (
     <StyledIntro className="right-div">
-      <BasicInfo heading="about me">
+      <BasicInfo heading="about me" pageType="intro">
         <Paragraph className="intro-text">
           Prolific full stack web developer with an eye for stunning designs, a
           passion for metrics and beating former "best-yets".
