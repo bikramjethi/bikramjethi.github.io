@@ -28,7 +28,7 @@ const Header = ({
         </button>
       )}
       {(displayHeader || !isMobileView) && <ProfileSection />}
-      <NavBar />
+      <NavBar background={background} />
     </StyledHeader>
   );
 };
