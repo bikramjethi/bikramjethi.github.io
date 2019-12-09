@@ -52,7 +52,7 @@ class Layout extends Component {
         />
         <div className={`${imagePanel ? "two-panel" : ""} main-layout`}>
           <Cursor color={color} className="cursor" />
-          {imagePanel && <DevImagePanel className="left-div" color={color} />}
+          {imagePanel && !isMobileView && <DevImagePanel className="left-div" color={color} />}
           {children}
         </div>
       </StyledLayout>

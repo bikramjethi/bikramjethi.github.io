@@ -29,10 +29,17 @@ export default styled.div`
 
   .left-div,
   .right-div {
-    width: 50%;
+    padding: 10px 10px 0;
     transition: all 2s;
   }
-  .right-div {
-    padding: 40px 40px 0;
+
+  @media screen and (min-width: 768px) {
+    .left-div,
+    .right-div {
+      width: 50%;
+    }
+    .right-div {
+      padding: 40px 40px 0;
+    }
   }
 `;
