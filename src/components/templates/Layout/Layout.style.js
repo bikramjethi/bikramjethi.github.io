@@ -29,8 +29,11 @@ export default styled.div`
 
   .left-div,
   .right-div {
-    padding: 10px 10px 0;
     transition: all 2s;
+  }
+
+  .right-div {
+    padding: 10px 10px 0;
   }
 
   @media screen and (min-width: 768px) {
