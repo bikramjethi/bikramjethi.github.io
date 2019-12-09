@@ -1,6 +1,6 @@
 import React from "react";
 import StyledProfileSection from "./ProfileSection.style";
-import profilePic from "../../../assets/images/profilePic.jpeg";
+import profilePic from "../../../assets/images/profilePic.jpg";
 
 const ProfileSection = () => (
   <StyledProfileSection>
