@@ -1,1 +1,4 @@
-
+@font-face{
+    font-family: 'Solway';
+    src:local('Solway'), url(./assets/fonts/Solway-Regular.ttf) format('truetype');
+}

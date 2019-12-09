@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
+  font-family: "Solway";
   cursor: none;
   ol,
   ul {

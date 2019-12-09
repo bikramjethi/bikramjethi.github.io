@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export default styled.div`
   width: 100%;
-  padding: 20px 10px 0;˝
-
+  padding: 40px 40px 0;
   h1 {
-      color:white;
+    color: white;
+    margin-bottom: 15px;
   }
 
-  &:hover {
-      padding: 40px 40px 0;
+  .intro-info {
+    margin-bottom: 15px;
   }
 `;
