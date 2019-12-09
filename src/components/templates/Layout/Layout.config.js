@@ -32,7 +32,7 @@ export const pathNameConfig = {
 export const imagePanelConfig = {
   home: false,
   intro: true,
-  resume: false,
+  resume: true,
   projects: true,
   contact: true
 };
