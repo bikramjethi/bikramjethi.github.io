@@ -42,7 +42,6 @@ export default styled.div`
       padding: 40px 40px 0;
       z-index: 3;
       margin-left: 0;
-      height: 200vh;
       padding-left: 47%;
     }
   }

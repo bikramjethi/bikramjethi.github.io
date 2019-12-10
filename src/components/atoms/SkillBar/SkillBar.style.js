@@ -13,7 +13,7 @@ export default styled.div`
     position: absolute;
     height: 10px;
     background: ${props => props.color};
-    width: ${props => props.value};
+    width: ${props => props.value}%;
     border-radius: 5px;
   }
 
