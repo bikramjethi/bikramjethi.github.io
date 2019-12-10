@@ -2,6 +2,7 @@ import React from "react";
 import StyledResume from "./Resume.style";
 import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 import Paragraph from "../../atoms/Paragraph";
+import Skills from "../../molecules/Skills";
 
 const Resume = () => (
   <StyledResume className="right-div" pageType="resume">
@@ -12,6 +13,8 @@ const Resume = () => (
         the TA-SBT Track.
       </Paragraph>
     </BasicInfo>
+
+    <Skills skills={[{ color: "#C3073F", value: "90%", skill: "React JS" }]} />
   </StyledResume>
 );
 
