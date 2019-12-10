@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colorConfig } from "./Layout.config";
 
 export default styled.div`
   display: flex;
@@ -47,6 +46,7 @@ export default styled.div`
       padding: 40px 40px 0;
       float: right;
       margin-left: 0;
+      height: 200vh;
     }
   }
 `;

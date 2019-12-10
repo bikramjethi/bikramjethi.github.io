@@ -2,14 +2,12 @@ import React from "react";
 import StyledBasicInfo from "./BasicInfo.style";
 import { bulletConfig } from "./BasicInfo.config";
 import Separator from "../../atoms/Separator";
-import Para from "../../atoms/Paragraph";
 
 const BasicInfo = ({ heading, children, pageType }) => {
   const pointConfig = bulletConfig[pageType] || {};
   const pointsHtml = Object.keys(pointConfig).map(key => (
     <p>
       {pointConfig[key]}
-      {/* <Para>{'\u00A0'}/{'\u00A0'}</Para> */}
     </p>
   ));
   return (
