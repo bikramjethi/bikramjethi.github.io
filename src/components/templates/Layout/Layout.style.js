@@ -23,12 +23,13 @@ export default styled.div`
 
   .left-div,
   .right-div {
+    display: inline-block;
     transition: all 2s;
   }
 
   .left-div {
     position: fixed;
-    height: 100%;
+    height: 100vh;
   }
 
   .right-div {
@@ -38,15 +39,19 @@ export default styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    .left-div,
-    .right-div {
-      width: 50%;
+    .main-layout {
+      display: flex;
+      margin-left: 140px;
+    }
+    .left-div {
+      width: 40%;
     }
     .right-div {
       padding: 40px 40px 0;
-      float: right;
+      z-index: 3;
       margin-left: 0;
       height: 200vh;
+      padding-left: 47%;
     }
   }
 `;

@@ -12,6 +12,7 @@ export default styled.div`
   height: 100vh;
   background: url(${homePageBackground}) no-repeat;
   background-size: cover;
+  width: 100%;
   > a {
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
