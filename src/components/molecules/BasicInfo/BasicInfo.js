@@ -6,13 +6,16 @@ import Para from "../../atoms/Paragraph";
 
 const BasicInfo = ({ heading, children, pageType }) => {
   const pointConfig = bulletConfig[pageType] || {};
-  const { point1, point2, point3 } = pointConfig || {};
+  const pointsHtml = Object.keys(pointConfig).map(key => (
+    <p>
+      {pointConfig[key]}
+      {/* <Para>{'\u00A0'}/{'\u00A0'}</Para> */}
+    </p>
+  ));
   return (
     <StyledBasicInfo>
       <h1>{heading}</h1>
-      <p className="intro-info">
-        {point1} <Para>/</Para> {point2} <Para>/</Para> {point3}
-      </p>
+      <div className="intro-info">{pointsHtml}</div>
       {children}
       <Separator />
     </StyledBasicInfo>

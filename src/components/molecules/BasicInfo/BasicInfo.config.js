@@ -5,7 +5,7 @@ export const bulletConfig = {
     point3: "Footballer"
   },
   resume: {
-    point1: "24 years",
+    point1: "3.6 years experience",
     point2: "Developer",
     point3: "Footballer"
   },
