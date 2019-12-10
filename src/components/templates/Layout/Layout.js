@@ -60,7 +60,7 @@ class Layout extends Component {
         >
           <Cursor color={headerHover ? background : color} className="cursor" />
           {imagePanel && !isMobileView && (
-            <DevImagePanel className="left-div" color={color} />
+            <DevImagePanel className="left-div" color={color} mode={mode}/>
           )}
           {children}
         </div>
