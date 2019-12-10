@@ -33,7 +33,7 @@ export default styled.div`
   }
 
   .right-div {
-    padding: 10px 10px 0;
+    padding: 10px 2px 0 5px;
   }
 
   @media screen and (min-width: 768px) {
