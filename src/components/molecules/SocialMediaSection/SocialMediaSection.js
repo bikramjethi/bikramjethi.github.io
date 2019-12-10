@@ -5,7 +5,7 @@ import SocialMediaLink from "../../atoms/SocialMediaLink";
 const SocialMediaSection = () => (
   <StyledSocialMediaSection>
     <SocialMediaLink type="facebook" link="" />
-    <SocialMediaLink type="linkedIn" link="" />
+    <SocialMediaLink type="linkedin" link="" />
     <SocialMediaLink type="twitter" link="" />
     <SocialMediaLink type="insta" link="" />
   </StyledSocialMediaSection>
