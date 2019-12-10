@@ -3,6 +3,7 @@ import StyledResume from "./Resume.style";
 import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 import Paragraph from "../../atoms/Paragraph";
 import Skills from "../../molecules/Skills";
+import { developerSkills } from "./Resume.config";
 
 const Resume = () => (
   <StyledResume className="right-div" pageType="resume">
@@ -14,7 +15,7 @@ const Resume = () => (
       </Paragraph>
     </BasicInfo>
 
-    <Skills skills={[{ color: "#C3073F", value: "90%", skill: "React JS" }]} />
+    <Skills skills={developerSkills} color="#C3073F" heading="Development Skills"/>
   </StyledResume>
 );
 
