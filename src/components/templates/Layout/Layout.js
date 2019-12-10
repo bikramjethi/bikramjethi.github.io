@@ -42,12 +42,7 @@ class Layout extends Component {
     return (
       <StyledLayout color={color} background={background}>
         {" "}
-        <div
-          className={`main-layout ${
-            displayHeader ? "header-open" : "header-close"
-          }`}
-        >
-          <Header
+        <Header
             isMobileView={isMobileView}
             displayHeader={displayHeader}
             background={color}
@@ -55,6 +50,11 @@ class Layout extends Component {
             openHeader={() => this.setState({ displayHeader: true })}
             closeHeader={() => this.setState({ displayHeader: false })}
           />
+        <div
+          className={`main-layout ${
+            displayHeader ? "header-open" : "header-close"
+          }`}
+        >
           <Cursor color={color} className="cursor" />
           {imagePanel && !isMobileView && (
             <DevImagePanel className="left-div" color={color} />

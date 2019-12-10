@@ -3,6 +3,7 @@ import homePageBackground from "../../../assets/images/homePageBackground.png";
 
 export default styled.div`
   display: grid;
+  margin-left: 70px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
@@ -36,5 +37,9 @@ export default styled.div`
   .projects {
     grid-column: 4/6;
     grid-row: 3/6;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
   }
 `;
