@@ -4,7 +4,6 @@ import StyledSkillBar from "./SkillBar.style";
 const SkillBar = ({ className, color, value, skill }) => {
   const [skillValue, setSkillValue] = useState(0);
   useEffect(() => {
-    console.log("useEffect called");
     if (skillValue + 3 <= value) setSkillValue(skillValue + 3);
     else setSkillValue(value);
   }, [skillValue,value]);
