@@ -5,7 +5,6 @@ import NavBar from "../../molecules/NavBar";
 import menuSvg from "../../../assets/svgs/menuIcon.svg";
 import closeSvg from "../../../assets/svgs/close.svg";
 import ProfileSection from "../../molecules/ProfileSection";
-import Cursor from "../../atoms/Cursor";
 
 const Header = ({
   isMobileView,
@@ -13,12 +12,18 @@ const Header = ({
   openHeader,
   closeHeader,
   background,
-  color
+  color,
+  mouseEnter,
+  mouseLeave
 }) => {
   const iconSvg = displayHeader ? closeSvg : menuSvg;
   return (
-    <StyledHeader background={background} color={color}>
-      <Cursor color={color} className="cursor" />
+    <StyledHeader
+      background={background}
+      color={color}
+      onMouseEnter={() => mouseEnter()}
+      onMouseLeave={() => mouseLeave()}
+    >
       {isMobileView && (
         <button
           className="cross-icon"

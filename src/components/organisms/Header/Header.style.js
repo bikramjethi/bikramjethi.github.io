@@ -10,15 +10,6 @@ export default styled.header`
   color: ${props => props.color};
   transition: all 2s;
 
-  .cursor {
-    display: none;
-  }
-  :hover {
-    .cursor {
-      display: block;
-    }
-  }
-
   .cross-icon {
     width: 30px;
     cursor: pointer;

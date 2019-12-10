@@ -11,7 +11,8 @@ class Layout extends Component {
     super(props);
     this.state = {
       isMobileView: false,
-      displayHeader: false
+      displayHeader: false,
+      headerHover: false
     };
   }
   componentDidMount() {
@@ -34,7 +35,7 @@ class Layout extends Component {
       children,
       location: { pathname }
     } = this.props;
-    const { isMobileView, displayHeader } = this.state;
+    const { isMobileView, displayHeader, headerHover } = this.state;
     const mode = pathNameConfig[pathname];
     const background = colorConfig[mode].background;
     const color = colorConfig[mode].color;
@@ -43,19 +44,21 @@ class Layout extends Component {
       <StyledLayout color={color} background={background}>
         {" "}
         <Header
-            isMobileView={isMobileView}
-            displayHeader={displayHeader}
-            background={color}
-            color={background}
-            openHeader={() => this.setState({ displayHeader: true })}
-            closeHeader={() => this.setState({ displayHeader: false })}
-          />
+          isMobileView={isMobileView}
+          displayHeader={displayHeader}
+          background={color}
+          color={background}
+          openHeader={() => this.setState({ displayHeader: true })}
+          closeHeader={() => this.setState({ displayHeader: false })}
+          mouseEnter={() => this.setState({ headerHover: true })}
+          mouseLeave={() => this.setState({ headerHover: false })}
+        />
         <div
           className={`main-layout ${
             displayHeader ? "header-open" : "header-close"
           }`}
         >
-          <Cursor color={color} className="cursor" />
+          <Cursor color={headerHover ? background : color} className="cursor" />
           {imagePanel && !isMobileView && (
             <DevImagePanel className="left-div" color={color} />
           )}

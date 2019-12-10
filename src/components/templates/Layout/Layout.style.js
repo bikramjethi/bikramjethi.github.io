@@ -11,14 +11,6 @@ export default styled.div`
   }
   .main-layout {
     width: 100%;
-    .cursor {
-      display: none;
-    }
-    :hover {
-      .cursor {
-        display: block;
-      }
-    }
   }
 
   .left-div,
