@@ -1,3 +1,3 @@
 export const checkViewPort = () => {
-  return window.matchMedia("(max-width:768px)").matches;
+  return window.matchMedia("(max-width:767px)").matches;
 };

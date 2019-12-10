@@ -2,7 +2,9 @@ export const bulletConfig = {
   intro: {
     point1: "24 years",
     point2: "Developer",
-    point3: "Footballer"
+    point3: "JS Enthusiast",
+    point4: "Footballer",
+    point5: "Gamer"
   },
   resume: {
     point1: "3.6 years experience",
@@ -16,13 +18,14 @@ export const bulletConfig = {
     point9: "Webpack"
   },
   projects: {
-    point1: "24 years",
-    point2: "Developer",
-    point3: "Footballer"
+    point1: "Bang and Olufsen",
+    point2: "JATO",
+    point3: "European Tour",
+    point4: "TA-SBT Fabhotels",
+    point5: "RACV"
   },
   contact: {
-    point1: "24 years",
-    point2: "Developer",
-    point3: "Footballer"
+    point1: "gmail",
+    point2: "Location"
   }
 };
