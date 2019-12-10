@@ -6,7 +6,7 @@ import Separator from "../../atoms/Separator";
 const BasicInfo = ({ heading, children, pageType }) => {
   const pointConfig = bulletConfig[pageType] || {};
   const pointsHtml = Object.keys(pointConfig).map(key => (
-    <p>
+    <p key={key}>
       {pointConfig[key]}
     </p>
   ));

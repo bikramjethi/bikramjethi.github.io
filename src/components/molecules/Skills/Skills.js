@@ -13,8 +13,9 @@ const Skills = ({ heading, skills, color }) => (
             color={color}
             value={value}
             skill={skill}
+            key={skill}
             className="skill-bar"
-          ></SkillBar>
+          />
         );
       })}
   </StyledSkills>
