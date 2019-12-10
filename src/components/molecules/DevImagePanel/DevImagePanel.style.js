@@ -15,4 +15,22 @@ export default styled.div`
     height: 100%;
     opacity: 0.2;
   }
+
+  .dev-profile {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 60%;
+    p {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+  }
 `;
