@@ -29,6 +29,12 @@ export default styled(Link)`
     color: #333;
   }
 
+  .card-front,
+  .card-back {
+    text-align: center;
+    padding: 10px;
+  }
+
   .card-front {
   }
 
