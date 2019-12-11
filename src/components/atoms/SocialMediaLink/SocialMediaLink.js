@@ -12,10 +12,10 @@ const svgConfig = {
   insta: instaSvg
 };
 
-const SocialMediaLink = ({ type }) => {
+const SocialMediaLink = ({ type, link }) => {
   const mediaIcon = svgConfig[type];
   return (
-    <StyledSocialMediaLink>
+    <StyledSocialMediaLink href={link}>
       <img src={mediaIcon} alt={type} />
     </StyledSocialMediaLink>
   );
