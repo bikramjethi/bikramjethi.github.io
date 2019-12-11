@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Header from "components/organisms/Header";
-import { checkViewPort } from "utils";
+import Header from "../../organisms/Header";
+import { checkViewPort } from "../../../utils";
 import StyledLayout from "./Layout.style";
 import { pathNameConfig, imagePanelConfig, colorConfig } from "./Layout.config";
-import DevImagePanel from "components/molecules/DevImagePanel";
-import Cursor from "components/atoms/Cursor";
+import DevImagePanel from "../../molecules/DevImagePanel";
+import Cursor from "../../atoms/Cursor";
 
 class Layout extends Component {
   constructor(props) {

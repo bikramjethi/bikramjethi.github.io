@@ -1,7 +1,7 @@
 import React from "react";
 import StyledIntro from "./Intro.style";
-import Paragraph from "components/atoms/Paragraph";
-import BasicInfo from "components/molecules/BasicInfo/BasicInfo";
+import Paragraph from "../../atoms/Paragraph";
+import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 
 const Intro = () => {
   return (

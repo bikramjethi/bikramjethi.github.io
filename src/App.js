@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StyledApp from "./App.style";
 import "./App.css";
 
-import Home from "components/templates/Home";
-import Intro from "components/templates/Intro";
-import Contact from "components/templates/Contact";
-import Resume from "components/templates/Resume";
-import Projects from "components/templates/Projects";
+import Home from "./components/templates/Home";
+import Intro from "./components/templates/Intro";
+import Contact from "./components/templates/Contact";
+import Resume from "./components/templates/Resume";
+import Projects from "./components/templates/Projects";
 
 import Layout from "./components/templates/Layout";
 

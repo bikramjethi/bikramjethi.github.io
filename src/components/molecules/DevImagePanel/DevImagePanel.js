@@ -1,8 +1,8 @@
 import React from "react";
 import StyledDevImagePanel from "./DevImagePanel.style";
-import introImage from "assets/images/introImage.png";
-import contactImage from "assets/images/contact.jpeg";
-import projectsImage from "assets/images/projects.jpg";
+import introImage from "../../../assets/images/introImage.png";
+import contactImage from "../../../assets/images/contact.jpeg";
+import projectsImage from "../../../assets/images/projects.jpg";
 import SocialMediaSection from "../SocialMediaSection/SocialMediaSection";
 
 const imageConfig = {

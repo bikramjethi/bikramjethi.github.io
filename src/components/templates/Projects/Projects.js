@@ -1,6 +1,6 @@
 import React from "react";
 import StyledProjects from "./Projects.style";
-import BasicInfo from "components/molecules/BasicInfo/BasicInfo";
+import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
 
 const Projects = () => (
   <StyledProjects className="right-div" pageType="projects">

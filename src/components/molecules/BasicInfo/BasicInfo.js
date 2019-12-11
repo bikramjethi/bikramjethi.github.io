@@ -1,7 +1,7 @@
 import React from "react";
 import StyledBasicInfo from "./BasicInfo.style";
 import { bulletConfig } from "./BasicInfo.config";
-import Separator from "components/atoms/Separator";
+import Separator from "../../atoms/Separator";
 
 const BasicInfo = ({ heading, children, pageType }) => {
   const pointConfig = bulletConfig[pageType] || {};

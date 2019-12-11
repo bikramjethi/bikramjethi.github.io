@@ -1,6 +1,6 @@
 import React from "react";
 import StyledSkills from "./Skills.style";
-import SkillBar from "components/atoms/SkillBar/SkillBar";
+import SkillBar from "../../atoms/SkillBar/SkillBar";
 
 const Skills = ({ heading, skills, color }) => (
   <StyledSkills>

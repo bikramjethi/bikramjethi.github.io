@@ -1,10 +1,10 @@
 import React from "react";
 import StyledHeader from "./Header.style";
-import NavBar from "components/molecules/NavBar";
+import NavBar from "../../molecules/NavBar";
 
-import menuSvg from "assets/svgs/menuIcon.svg";
-import closeSvg from "assets/svgs/close.svg";
-import ProfileSection from "components/molecules/ProfileSection";
+import menuSvg from "../../../assets/svgs/menuIcon.svg";
+import closeSvg from "../../../assets/svgs/close.svg";
+import ProfileSection from "../../molecules/ProfileSection";
 
 const Header = ({
   isMobileView,
