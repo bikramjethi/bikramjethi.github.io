@@ -9,6 +9,7 @@ export default styled.div`
   a {
     color: ${props => props.color};
   }
+
   .main-layout {
     width: 100%;
   }
@@ -22,6 +23,7 @@ export default styled.div`
   .left-div {
     position: fixed;
     height: 100vh;
+    z-index: 2;
   }
 
   .right-div {
@@ -40,7 +42,6 @@ export default styled.div`
     }
     .right-div {
       padding: 40px 40px 0;
-      z-index: 3;
       margin-left: 0;
       padding-left: 47%;
     }

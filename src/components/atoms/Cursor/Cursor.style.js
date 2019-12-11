@@ -13,7 +13,7 @@ export default styled.div.attrs(props => ({
   position: absolute;
   pointer-events: none !important;
   animation: cursorAnim 0.5s infinite alternate;
-  z-index: 2;
+  z-index: 3;
 
   ::before {
     content: "";
