@@ -1,6 +1,5 @@
 import styled from "styled-components";
 export default styled.nav`
-
   ul {
     display: flex;
     flex-direction: column;
@@ -32,19 +31,21 @@ export default styled.nav`
     max-height: 28px;
   }
 
-  .nav-link:hover {
-    .tool-tip {
-      animation: navLinkAnim 0.6s forwards;
-      visibility: visible;
+  @media screen and (min-width: 768px) {
+    .nav-link:hover {
+      .tool-tip {
+        animation: navLinkAnim 0.6s forwards;
+        visibility: visible;
+      }
     }
-  }
 
-  @keyframes navLinkAnim {
-    0% {
-      width: 20px;
-    }
-    100% {
-      width: 250px;
+    @keyframes navLinkAnim {
+      0% {
+        width: 20px;
+      }
+      100% {
+        width: 250px;
+      }
     }
   }
 `;
