@@ -1,6 +1,6 @@
 import React from "react";
 import StyledSocialMediaSection from "./SocialMediaSection.style";
-import SocialMediaLink from "../../atoms/SocialMediaLink";
+import SocialMediaLink from "components/atoms/SocialMediaLink";
 
 const SocialMediaSection = () => (
   <StyledSocialMediaSection>

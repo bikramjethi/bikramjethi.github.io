@@ -2,11 +2,11 @@ import React from "react";
 import StyledNavBar from "./NavBar.style";
 import { Link } from "react-router-dom";
 
-import homeSvg from "../../../assets/svgs/home.svg";
-import introSvg from "../../../assets/svgs/intro.svg";
-import projectsSvg from "../../../assets/svgs/projects.svg";
-import contactSvg from "../../../assets/svgs/contact.svg";
-import resumeSvg from "../../../assets/svgs/resume.svg";
+import homeSvg from "assets/svgs/home.svg";
+import introSvg from "assets/svgs/intro.svg";
+import projectsSvg from "assets/svgs/projects.svg";
+import contactSvg from "assets/svgs/contact.svg";
+import resumeSvg from "assets/svgs/resume.svg";
 
 const NavBar = ({ background }) => {
   return (

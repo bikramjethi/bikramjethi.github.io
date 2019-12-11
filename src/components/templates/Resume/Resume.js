@@ -1,8 +1,8 @@
 import React from "react";
 import StyledResume from "./Resume.style";
-import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
-import Paragraph from "../../atoms/Paragraph";
-import Skills from "../../molecules/Skills";
+import BasicInfo from "components/molecules/BasicInfo/BasicInfo";
+import Paragraph from "components/atoms/Paragraph";
+import Skills from "components/molecules/Skills";
 import { developerSkills } from "./Resume.config";
 
 const Resume = () => (

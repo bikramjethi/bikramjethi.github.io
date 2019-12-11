@@ -1,6 +1,6 @@
 import React from "react";
 import StyledContact from "./Contact.style";
-import BasicInfo from "../../molecules/BasicInfo/BasicInfo";
+import BasicInfo from "components/molecules/BasicInfo/BasicInfo";
 
 const Contact = () => (
   <StyledContact className="right-div">

@@ -1,6 +1,6 @@
 import React from "react";
 import StyledHome from "./Home.style";
-import FlipCard from "../../organisms/FlipCard";
+import FlipCard from "components/organisms/FlipCard";
 
 const Home = ({ className }) => (
   <StyledHome className={className}>
