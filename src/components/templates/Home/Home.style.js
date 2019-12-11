@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import homePageBackground from "../../../assets/images/homePageBackground.png";
+import homePageBackground from "../../../assets/images/homePageBackground.jpg";
 
 export default styled.div`
   display: grid;
