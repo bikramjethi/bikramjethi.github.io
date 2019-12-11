@@ -10,6 +10,8 @@ const SkillBar = ({ className, color, value, skill }) => {
       timer = setTimeout(() => {
         setSkillValue(skillValue + 3);
       }, 30);
+    } else {
+      setSkillValue(value);
     }
     return () => clearTimeout(timer);
   }, [skillValue, value]);
