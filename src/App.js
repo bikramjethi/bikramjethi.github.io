@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <StyledApp>
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <Switch>
             <Layout>
               <Route path="/" exact component={Home} />
