@@ -41,9 +41,15 @@ export default styled.div`
       width: 40%;
     }
     .right-div {
-      padding: 40px 40px 0;
+      padding: 40px 10px 0;
       margin-left: 0;
-      padding-left: 47%;
+      padding-left: 51%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .right-div {
+      padding-left: 48%;
     }
   }
 `;
